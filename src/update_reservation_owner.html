@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Update Reservation - Owner</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Please update reservation information:</h2>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="reservationNumber" class="col-sm-2 control-label">Reservation number is: </label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="reservationNumber" type="text" placeholder="XXX-XXX-XXXX" disabled>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="date">Date:</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" id="date" placeholder="Enter date">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="time">Time:</label>
+                <div class="col-sm-4">
+                    <input type="time" class="form-control" id="time" placeholder="Enter time">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="party size">Party Size:</label>
+                <div class="col-sm-4">
+                    <input type="number" min="1" max="100" class="form-control" id="party size" placeholder="Enter party size">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Customer Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="address">Address:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="address">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="tel">Phone Number:</label>
+                <div class="col-sm-4">
+                    <input type="tel" class="form-control" id="tel">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="table">Table Number:</label>
+                <div class="col-sm-4">
+                    <input type="number" min="1" max="50" class="form-control" id="table">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" class="btn btn-default">Assign Table</button>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
