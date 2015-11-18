@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Assign table</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Please select a table for reservation - :</h2>
+        <div class="table-responsive col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Table number</th>
+                    <th>Size</th>
+                    <th>Status</th>
+                    <th>Since</th>
+                    <th>Select</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>Confirmed</td>
+                    <td>8:00 PM</td>
+                    <td><input type="radio" name="items" value="1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>Confirmed</td>
+                    <td>9:00 PM</td>
+                    <td><input type="radio" name="items" value="2"></td>
+                </tr>
+                <tr class="active">
+                    <td>3</td>
+                    <td>8</td>
+                    <td>Available</td>
+                    <td>6:00 PM</td>
+                    <td><input type="radio" name="items" value="3"></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-6 col-sm-4">
+            <button type="submit" class="btn btn-default">Assign Table</button>
+        </div>
+    </div>
+
+</body>
+</html>
